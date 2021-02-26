@@ -13,7 +13,8 @@ const Layout = styled.div`
   flex-direction: column;
 `
 
-const NoLayout = ({children}) => {
+// TODO 需要區分
+const Index = ({children}) => {
     /**
      * state
      */
@@ -36,4 +37,4 @@ const NoLayout = ({children}) => {
     )
 }
 
-export default NoLayout
+export default Index

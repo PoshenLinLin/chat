@@ -1,10 +1,7 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState} from 'react'
 import styled from 'styled-components'
 
-import {CardFrame } from 'components/wrapper/frame'
-import CardList from 'components/card/cardList'
-
-
+import SquareCardList from 'components/card/squareCardList'
 const wsList = [
     {name: 'joe', status: true, id: ''},
     {name: 'tyson', status: false, id: ''},
@@ -16,7 +13,6 @@ const wsList = [
     {name: 'tyson', status: false, id: ''},
     {name: 'meow', status: true, id: ''},
 ]
-
 const Index = () => {
     /**
      * state
@@ -29,19 +25,12 @@ const Index = () => {
     /**
      * methods
      */
-    const handleClick = (item) => {
-        console.log('item', item)
-    }
 
     /**
      * render
      */
     return (
-        <>
-            <CardFrame>
-                <CardList title = '上線中' sourceList={wsList} onHandleClick={handleClick}/>
-            </CardFrame>
-        </>
+        <SquareCardList sourceList={wsList}></SquareCardList>
     )
 }
 

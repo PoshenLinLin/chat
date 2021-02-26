@@ -1,7 +1,14 @@
 import React, { useEffect, useState} from 'react'
 import styled from 'styled-components'
 
-const Card = styled.div`
+/**
+ * 此為單純外框 component
+ * @type {StyledComponent<"div", AnyIfEmpty<DefaultTheme>, {}, never>}
+ * @component CardFrame 方形外框__陰影
+ */
+
+
+export const CardFrame = styled.div`
   background-color: ${({theme}) => theme.element.primary};
   color: ${({theme}) => theme.bg.text};
   width: 100%;
@@ -13,27 +20,4 @@ const Card = styled.div`
   0 3px 20px rgba(0,0,0,.1);
 `
 
-const Index = ({children}) => {
-    /**
-     * state
-     */
 
-    /**
-     * effect
-     */
-
-    /**
-     * methods
-     */
-
-    /**
-     * render
-     */
-    return (
-        <Card>
-            {children}
-        </Card>
-    )
-}
-
-export default Index
