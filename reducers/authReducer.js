@@ -10,5 +10,7 @@ const userState = {
 }
 
 export const authReducer = handleActions({
+    '': () => {
 
+    },
 }, userState)
