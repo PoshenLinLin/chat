@@ -7,7 +7,6 @@ const useExpand = () => {
     const [active, setActive] = useState(false)
 
     const toggleExpand = () => {
-        console.log('before set ', active)
         setActive(!active)
     }
 

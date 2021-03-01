@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
 
 import breakpoints from "styles/breakpoints";
-import Icon from 'components/icon'
+import Icon from 'components/common/icon'
 
 const Flex = styled.div`
   display: flex;

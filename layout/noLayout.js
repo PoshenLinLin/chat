@@ -13,6 +13,12 @@ const Layout = styled.div`
   flex-direction: column;
 `
 
+/**
+ * noLayout 元件會放置於畫面中間
+ * @param children
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const NoLayout = ({children}) => {
     /**
      * state

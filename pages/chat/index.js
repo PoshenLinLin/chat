@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import styled from 'styled-components'
 
-import {CardFrame } from 'components/wrapper/frame'
+import {CardFrame} from 'components/wrapper/frame'
 import CardList from 'components/card/cardList'
 
 
@@ -39,7 +39,7 @@ const Index = () => {
     return (
         <>
             <CardFrame>
-                <CardList title = '上線中' sourceList={wsList} onHandleClick={handleClick}/>
+                <CardList title='上線中' sourceList={wsList} onHandleClick={handleClick}/>
             </CardFrame>
         </>
     )

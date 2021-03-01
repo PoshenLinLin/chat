@@ -1,0 +1,17 @@
+
+// export const REQUEST_SUCCESS = 'REQUEST_SUCCESS';
+// export const REQUEST_ERROR = 'REQUEST_ERROR';
+// export const REQUEST_LOADING = 'REQUEST_LOADING';
+
+
+const REQUEST = {
+    SUCCESS: 'REQUEST_SUCCESS',
+    ERROR: 'REQUEST_ERROR',
+    LOADING: 'REQUEST_LOADING',
+}
+
+
+
+export default {
+    REQUEST
+}
