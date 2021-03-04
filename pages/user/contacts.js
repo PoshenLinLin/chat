@@ -32,6 +32,8 @@ const Index = () => {
     /**
      * state
      */
+    const [profileShow, setProfileShow] = useState(false)
+    const [profileItem, setProfileItem] = useState({})
 
     /**
      * effect
@@ -42,7 +44,8 @@ const Index = () => {
      */
     const openUserProfile = (item) => {
         console.log('open userProfile', item)
-
+        setProfileItem(item)
+        setProfileShow(true)
     }
 
     /**
@@ -51,7 +54,7 @@ const Index = () => {
     return (
         <>
             {/* store 狀態看是否顯示全屏的 dialog */}
-            <ProfileDialog/>
+            <ProfileDialog show ={profileShow}/>
             <SquareCardList title='Favorites' sourceList={favorites} onHandleClick={openUserProfile}></SquareCardList>
             <SquareCardList title='Friends' sourceList={friends} onHandleClick={openUserProfile}></SquareCardList>
             <SquareCardList title='Groups' sourceList={groups} onHandleClick={openUserProfile}></SquareCardList>

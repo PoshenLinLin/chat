@@ -59,7 +59,10 @@ const Footer = styled.div`
  * @returns {JSX.Element}
  * @constructor
  */
-const Index = ({item}) => {
+const Index = ({show, item}) => {
+
+    const dispatch = useDispatch()
+    const [isShow, setIsShow] = useState(show)
     /**
      * state
      */
@@ -67,6 +70,8 @@ const Index = ({item}) => {
     /**
      * effect
      */
+    useEffect(() => {
+    }, [show])
 
     /**
      * methods
@@ -78,13 +83,15 @@ const Index = ({item}) => {
 
     }
     const handleClose = () => {
-
+        console.log('handleClose')
+        setIsShow(false)
     }
 
     /**
      * render
      */
 
+    if(!isShow) return <></>
     return (
         <FullDialog>
 
